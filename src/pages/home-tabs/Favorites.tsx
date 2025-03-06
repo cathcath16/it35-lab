@@ -8,11 +8,11 @@ import {
   IonToolbar,
   IonBadge, IonItem, IonLabel, IonList, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle 
 } from '@ionic/react';
-import './Favorites.css'; 
+import './Favorites.css'; // Import your CSS file for custom styles
 
 const Favorites: React.FC = () => {
   return (
-      <IonPage className="page-background"> 
+      <IonPage className="page-background"> {/* Add the background class here */}
           <IonHeader>
               <IonToolbar>
                   <IonButtons slot='start'>
