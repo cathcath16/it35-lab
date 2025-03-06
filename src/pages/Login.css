@@ -1,0 +1,12 @@
+
+.page-background {
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100%; 
+    position: relative; 
+}
+ion-content {
+    --background: url('https://img.lovepik.com/background/20211021/large/lovepik-blue-technology-background-image_401504577.jpg') no-repeat center center / cover;
+  }

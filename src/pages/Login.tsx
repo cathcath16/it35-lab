@@ -11,20 +11,21 @@ import {
   useIonRouter 
 } from '@ionic/react';
 import { useState } from 'react';
+import './Login.css'; 
 
 const Login: React.FC = () => {
   const navigation = useIonRouter();
   
-  // State to hold username and password
+  
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const doLogin = () => {
-      // Here you can add your login logic (e.g., API call)
+      
       console.log('Username:', username);
       console.log('Password:', password);
       
-      // Navigate to the next page after login
+      
       navigation.push('/it35-lab/app', 'forward', 'replace');
   }
 
@@ -35,7 +36,7 @@ const Login: React.FC = () => {
                   <IonTitle>Login</IonTitle>
               </IonToolbar>
           </IonHeader>
-          <IonContent className='ion-padding'>
+          <IonContent className='ion-padding page-background'> 
               <IonItem>
                   <IonLabel position="floating">Username</IonLabel>
                   <IonInput 
@@ -57,7 +58,7 @@ const Login: React.FC = () => {
                   Login
               </IonButton>
           </IonContent>
-      </IonPage>
+      </IonPage>    
   );
 };
 
