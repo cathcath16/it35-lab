@@ -8,18 +8,18 @@ import {
   IonToolbar,
   IonBadge, IonItem, IonLabel, IonList, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle 
 } from '@ionic/react';
-import './Favorites.css'; // Import your CSS file for custom styles
+import './Favorites.css'; 
 
 const Favorites: React.FC = () => {
   return (
-      <IonPage>
+      <IonPage className="page-background"> 
           <IonHeader>
               <IonToolbar>
                   <IonButtons slot='start'>
                       <IonMenuButton></IonMenuButton>
                   </IonButtons>
                   <IonTitle>Favorites</IonTitle>
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBavOOQ_f_xSRFBYXPTdTAvxJ2E8k3FgWfg&s" alt="Instagram Logo" className="instagram-logo" /> {/* Adjust the path as necessary */}
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBavOOQ_f_xSRFBYXPTdTAvxJ2E8k3FgWfg&s" alt="Instagram Logo" className="instagram-logo" />
               </IonToolbar>
           </IonHeader>
           <IonCard>
