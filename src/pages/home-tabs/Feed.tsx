@@ -1,37 +1,48 @@
-import { 
-    IonButtons,
-      IonContent, 
-      IonHeader, 
-      IonMenuButton, 
-      IonPage, 
-      IonTitle, 
-      IonToolbar,
-      IonChip 
-  } from '@ionic/react';
-  
-  const Feed: React.FC = () => {
-    return (
-      <IonPage>
-        <IonHeader>
-          <IonToolbar>
-            <IonButtons slot='start'>
-              <IonMenuButton></IonMenuButton>
-            </IonButtons>
-            <IonTitle>Feed</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <IonChip>Default</IonChip>
-      <IonChip color="primary">Primary</IonChip>
-      <IonChip color="secondary">Secondary</IonChip>
-      <IonChip color="tertiary">Tertiary</IonChip>
-      <IonChip color="success">Success</IonChip>
-      <IonChip color="warning">Warning</IonChip>
-      <IonChip color="danger">Danger</IonChip>
-      <IonChip color="light">Light</IonChip>
-      <IonChip color="medium">Medium</IonChip>
-      <IonChip color="dark">Dark</IonChip>
-      </IonPage>
-    );
-  };
-  
-  export default Feed;
+import {
+  IonButtons,
+  IonContent,
+  IonHeader,
+  IonMenuButton,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  IonCard,
+  IonCardHeader,
+  IonCardTitle,
+  IonCardContent,
+  IonText
+} from '@ionic/react';
+import FeedContainer from '../../components/FeedContainer';
+
+const Feed: React.FC = () => {
+  return (
+    <IonPage>
+      <IonHeader>
+        <IonToolbar color="dark">
+          <IonButtons slot="start">
+            <IonMenuButton />
+          </IonButtons>
+        </IonToolbar>
+      </IonHeader>
+
+      <IonContent fullscreen color="light">
+        <div style={{ padding: '16px' }}>
+          <IonCard className="ion-activatable ripple-parent">
+            <IonCardHeader>
+              <IonCardTitle>Welcome to your feed</IonCardTitle>
+            </IonCardHeader>
+            <IonCardContent>
+              <IonText color="medium">
+                Here's where you’ll see your latest updates.
+              </IonText>
+            </IonCardContent>
+          </IonCard>
+
+          <FeedContainer />
+        </div>
+      </IonContent>
+    </IonPage>
+  );
+};
+
+export default Feed;
