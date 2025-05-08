@@ -23,7 +23,7 @@ import { createClient } from '@supabase/supabase-js';
 import bcrypt from 'bcryptjs';
 
 // Initialize Supabase client
-const supabase = createClient('https://iorulmytlagfwkduecft.supabase.co', 'your-supabase-key');
+const supabase = createClient('https://iorulmytlagfwkduecft.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlvcnVsbXl0bGFnZndrZHVlY2Z0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI3NzQxMjksImV4cCI6MjA1ODM1MDEyOX0.4ffXw8lGI6fJEGqxmLXopGY7_XxRFhZI-OwEB_CZCtU');
 const AlertBox: React.FC<{ message: string; isOpen: boolean; onClose: () => void }> = ({ message, isOpen, onClose }) => {
   return (
     <IonAlert
